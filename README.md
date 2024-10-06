@@ -33,6 +33,53 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
+## INSTALASI
+
+1. clone repository ini
+2. setelah melakukan clone, inisiasi composer dengan menjalankan perintah berikut
+   
+   ```
+   composer install
+   ```
+3. Lakukan inisiasi pada npm dengan menjalankan perintah berikut
+
+   ```
+   npm install
+   ```
+4. lakukan perubahan pada env.
+   - ubah konfigurasi database sesuai dengan database yang digunakan.
+   - ubah FILESYSTEM_DISK menjadi public
+     
+   ```
+    FILESYSTEM_DISK=public
+   ```
+5. lakukan migrasi pada database dengan menjalankan perintah berikut
+   - migrasi database
+     ```
+     php artisan migrate:fresh
+     ```
+   - dan
+     ```
+     php artisan db:seed
+     ```
+7. Untuk menjalankan program buat 2 terminal pada direktori.
+   
+   - Pada terminal pertama jalankan
+     
+   ```
+   php artisan ser
+   ```
+   
+   - Pada terminal kedua jalankan
+
+   ```
+    npm run dev
+   ```
+8. Untuk akun default user adalah
+   - name : testUser
+   - email : test@example.com
+   - password : 123
+
 ### Premium Partners
 
 - **[Vehikl](https://vehikl.com/)**
