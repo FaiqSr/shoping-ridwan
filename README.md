@@ -36,9 +36,29 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 ## INSTALASI
 
 1. clone repository ini
-2. setelah melakukan clone, jalankan perintah
+2. setelah melakukan clone, inisiasi composer dengan menjalankan perintah berikut
+   
    ```
    composer install
+   ```
+3. Lakukan inisiasi pada npm dengan menjalankan perintah berikut
+
+   ```
+   npm install
+   ```
+4. lakukan perubahan pada env.
+   a. ubah konfigurasi database sesuai dengan database yang digunakan
+   b. ubah FILESYSTEM_DISK menjadi public
+   ```
+    FILESYSTEM_DISK=public
+   ```
+5. Untuk menjalankan program buat 2 terminal pada direktori program lalu jalankan perintah
+   ```
+   php artisan ser
+   ```
+   dan jalankan perintah
+   ```
+    npm run dev
    ```
 
 
