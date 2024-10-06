@@ -53,11 +53,16 @@ We would like to extend our thanks to the following sponsors for funding Laravel
    ```
     FILESYSTEM_DISK=public
    ```
-5. Untuk menjalankan program buat 2 terminal pada direktori program lalu jalankan perintah
+5. Untuk menjalankan program buat 2 terminal pada direktori.
+   
+   - Pada terminal pertama jalankan
+     
    ```
    php artisan ser
    ```
-   dan jalankan perintah
+   
+   - Pada terminal kedua jalankan
+
    ```
     npm run dev
    ```
