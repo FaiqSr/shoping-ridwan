@@ -75,7 +75,9 @@ We would like to extend our thanks to the following sponsors for funding Laravel
    ```
     npm run dev
    ```
-
+8. Untuk akun default user adalah
+   > test@example.com
+   > 123
 
 ### Premium Partners
 
