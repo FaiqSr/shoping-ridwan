@@ -62,6 +62,10 @@ We would like to extend our thanks to the following sponsors for funding Laravel
      ```
      php artisan db:seed
      ```
+6. sebelum menjalankan program buat key dengan menjalankan perintah
+   ```
+   php artisan key:generate
+   ```
 7. Untuk menjalankan program buat 2 terminal pada direktori.
    
    - Pada terminal pertama jalankan
