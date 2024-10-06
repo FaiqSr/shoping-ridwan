@@ -53,7 +53,16 @@ We would like to extend our thanks to the following sponsors for funding Laravel
    ```
     FILESYSTEM_DISK=public
    ```
-5. Untuk menjalankan program buat 2 terminal pada direktori.
+5. lakukan migrasi pada database dengan menjalankan perintah berikut
+   - migrasi database
+     ```
+     php artisan migrate:fresh
+     ```
+   - dan
+     ```
+     php artisan db:seed
+     ```
+7. Untuk menjalankan program buat 2 terminal pada direktori.
    
    - Pada terminal pertama jalankan
      
