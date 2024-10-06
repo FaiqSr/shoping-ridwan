@@ -1,21 +1,26 @@
 <x-layout>
 
 
-    <h1>{{ $title }}</h1>
+    <h1 class="text-center text-5xl font-bold">{{ $title }}</h1>
 
-    <div class="flex gap-5 overflow-auto">
-        @foreach ($data as $datas)
-            <div class="h-fit w-96">
-                <a href="/market/{{ $datas->id }}"
-                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ $datas->name }}
-                    </h5>
-                    <p class="font-normal text-gray-700 dark:text-gray-400">{{ Str::limit($datas->desc, 30) }}</p>
-                </a>
-
-            </div>
-        @endforeach
+    <div>
+        <div>
+            <h1 class="text-3xl font-bold mb-3 pl-5">Hewan Musang</h1>
+        </div>
+        <div class="flex overflow-auto px-5 gap-5 ">
+            @foreach ($data as $datas)
+                <section class="w-96">
+                    <a href="/market/{{ $datas->id }}"
+                        class="flex flex-col text-center border-2 p-5 rounded-lg items-center">
+                        <div class="w-80">
+                            <img src="http://127.0.0.1:8000/{{ $datas->image }}" alt="" class=" rounded-lg">
+                        </div>
+                        <h1>{{ $datas->name }}</h1>
+                        <p>{{ Str::limit($datas->desc, 50, '...') }}</p>
+                    </a>
+                </section>
+            @endforeach
+        </div>
     </div>
     <section class="min-h-svh ">asfasf</section>
 

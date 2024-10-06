@@ -19,7 +19,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required',
             'desc' => 'required',
-            'stok' => 'required',
+            'stok' => 'required|numeric',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
@@ -29,7 +29,7 @@ class ProductController extends Controller
             'name' => $request->name,
             'desc' => $request->desc,
             'stok' => $request->stok,
-            'image' => $request->file('image')->store('images')
+            'image' => "storage/" . $request->file('image')->store('images')
         ]);
 
         // $product = new Product();
@@ -38,6 +38,30 @@ class ProductController extends Controller
         // $product->stok = $request->stok;
         // $product->image = 'product-images' . $imageName;
         // $product->save();
+
+        return back();
+    }
+
+    public function deleteProduct()
+    {
+        $product = Product::get();
+
+        if (!$product) {
+            return back();
+        } else {
+            Product::query()->delete();
+        }
+
+        return back();
+    }
+
+    public function deleteProductById(Request $request)
+    {
+        $request->validate([
+            'id'
+        ]);
+
+        Product::where('id', $request->id)->delete();
 
         return back();
     }

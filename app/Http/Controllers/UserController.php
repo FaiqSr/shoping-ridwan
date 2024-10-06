@@ -15,7 +15,7 @@ class UserController extends Controller
             return redirect('/profile');
         }
 
-        $chart = Chart::where('user_id', $id)->get();
+        $chart = Chart::with('user')->where('user_id', $id)->get();
 
 
         return view('chart', ['data' => $chart]);

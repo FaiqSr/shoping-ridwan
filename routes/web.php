@@ -36,4 +36,6 @@ Route::middleware(AdminAuthenticate::class)->group(function () {
     Route::get('/product-dashboard', [DashboardController::class, 'product']);
     Route::get('/product-dashboard/tambah', [ProductController::class, 'index']);
     Route::post('/product-dashboard/tambah', [ProductController::class, 'sentData']);
+    Route::post('/product-dashboard/delete', [ProductController::class, 'deleteProductById']);
+    Route::post('/product-dashboard/delete-product', [ProductController::class, 'deleteProduct']);
 });
