@@ -47,8 +47,8 @@ We would like to extend our thanks to the following sponsors for funding Laravel
    npm install
    ```
 4. lakukan perubahan pada env.
-   a. ubah konfigurasi database sesuai dengan database yang digunakan
-   b. ubah FILESYSTEM_DISK menjadi public
+   ubah konfigurasi database sesuai dengan database yang digunakan
+   ubah FILESYSTEM_DISK menjadi public
    ```
     FILESYSTEM_DISK=public
    ```
