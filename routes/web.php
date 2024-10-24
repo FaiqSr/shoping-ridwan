@@ -8,11 +8,16 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminAuthenticate;
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\UnAuthenticate;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('home');
+    $data = Product::latest()->get();
+
+    return view('home', [
+        'data' => $data
+    ]);
 });
 
 Route::post('/logout', [LoginController::class, 'logout']);
