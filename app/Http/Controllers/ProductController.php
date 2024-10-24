@@ -15,7 +15,9 @@ class ProductController extends Controller
 
     public function sentData(Request $request)
     {
+        // dd($request);
 
+        // Memvalidasi request
         $request->validate([
             'name' => 'required',
             'desc' => 'required',
@@ -24,7 +26,7 @@ class ProductController extends Controller
         ]);
 
 
-
+        // Menambahkan produk kedalam database
         Product::create([
             'name' => $request->name,
             'desc' => $request->desc,
@@ -44,8 +46,10 @@ class ProductController extends Controller
 
     public function deleteProduct()
     {
+        // Mengambil data product dari database
         $product = Product::get();
 
+        // Validasi data product
         if (!$product) {
             return back();
         } else {
@@ -57,10 +61,12 @@ class ProductController extends Controller
 
     public function deleteProductById(Request $request)
     {
+        // Validasi request
         $request->validate([
             'id'
         ]);
 
+        // Menghapus data product
         Product::where('id', $request->id)->delete();
 
         return back();
