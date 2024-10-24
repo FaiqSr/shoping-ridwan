@@ -1,4 +1,17 @@
-<x-layout>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
+    <title>Bubro Farm</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <x-navbar />
     <main class="flex min-h-svh items-center justify-center flex-col gap-5">
 
         <h1 class="text-5xl font-bold">Login Form</h1>
@@ -24,4 +37,6 @@
         </form>
 
     </main>
-</x-layout>
+</body>
+
+</html>
