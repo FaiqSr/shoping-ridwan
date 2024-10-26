@@ -1,7 +1,7 @@
 <x-layout>
     <!-- Jumbotron -->
     <div class="relative overflow-hidden bg-cover bg-no-repeat py-12 text-center bg-center"
-        style="background-image: url('/aset/homepage.jpg'); height: 400px">
+        style="background-image: url('/aset/homepage.JPG'); height: 400px">
         <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed ">
             <div class="flex h-full items-center  justify-center lg:items-end">
                 <div class="text-white lg   lg:text-black z-10">
