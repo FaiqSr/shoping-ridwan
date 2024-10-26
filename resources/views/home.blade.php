@@ -5,19 +5,21 @@
         <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed ">
             <div class="flex h-full items-center  justify-center lg:items-end">
                 <div class="text-white lg   lg:text-black z-10">
-                    <h2 class="mb-4 text-3xl sm:text-5xl font-semibold">Segar, Sederhana, Sehat</h2>
+                    <h2 class="mb-4 text-3xl sm:text-5xl font-semibold ">Segar,
+                        Sederhana, Sehat</h2>
                     <h4 class="mb-6 text-3xl font-semibold">Bubro Farm</h4>
                 </div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute sm:block -bottom-1 ">
-            <path fill="#ffff" fill-opacity="1"
+            <path fill="#f8fafc" fill-opacity="1"
                 d="M0,192L80,170.7C160,149,320,107,480,112C640,117,800,171,960,197.3C1120,224,1280,224,1360,224L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
             </path>
         </svg>
     </div>
     <!-- Jumbotron -->
-    <div class="flex justify-center gap-10 container mx-auto mt-5 flex-col sm:flex-row">
+
+    <div class="flex justify-center gap-10 container mx-auto pt-5 flex-col sm:flex-row">
         <div class="flex justify-center flex-col items-center ">
             <i data-feather="droplet" class="w-16 h-16 text-blue-500"></i>
             <p class="font-light text-lg">Hidroponik</p>
@@ -31,7 +33,10 @@
             <p class="font-light text-lg">Bebas pestisida</p>
         </div>
     </div>
-    <div class=" flex  items-center justify-center flex-col container mx-auto mt-5 mb-5 px-5">
+
+    {{-- Produk --}}
+
+    <div class=" flex  items-center justify-center flex-col container mx-auto py-5  px-5 ">
         <p class="sm:text-center sm:text-xl"><span class="font-bold">Bubro<span
                     class="text-green-400">Farm</span></span>, kami menyajikan kesegaran
             sayuran organik dan ikan
@@ -48,7 +53,7 @@
                 <a href="#"
                     class="flex flex-col items-center w-full sm:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#0284c7"
                         height="100px" width="100px" version="1.1" viewBox="0 0 512 512"
                         enable-background="new 0 0 512 512">
                         <g>
@@ -75,13 +80,13 @@
                         <g>
                             <path
                                 d="M213.082,19.504c-1.18-1.459-3.297-3.063-6.014-3.057c-6.08,0.763-7.246,4.442-9.848,7.833   c-1.24,1.941-2.588,4.221-4.098,6.735C173.98,11.865,147.473,0,118.229,0C88.176,0,61.016,12.532,41.768,32.622   c-4.035-4.349-8.738-7.2-14.217-7.697c-4.926-0.075-9.379,3.215-11.916,7.891C5.686,50.217,0,70.383,0,91.836   c0.004,58.263,41.85,106.747,97.174,117.206c0.365,0.074,0.732,0.14,1.098,0.209c0.088,0.016,0.176,0.031,0.264,0.047   c6.385,1.201,12.967,1.843,19.693,1.841c0.182,0,0.361-0.009,0.543-0.01c0.264,0.001,0.525,0.01,0.791,0.01   c66.021,0,119.553-53.401,119.559-119.303C239.188,62.905,230.461,40.058,213.082,19.504z M187.346,39.396   c0.109,0.113,0.234,0.198,0.352,0.299c-6.834,10.342-16.527,22.417-31.717,31.955c-11.117,6.976-26.291,18.144-39.307,28.065   c0.043-0.765,0.072-1.534,0.072-2.314c-0.051-13.62-6.088-30.083-8.023-47.491c-0.137-1.221-0.201-2.407-0.201-3.562   c-0.367-19.22,19.256-30.847,29.695-34.263C157.316,16.128,174.299,25.844,187.346,39.396z M118.229,10.001   c3.609,0,7.17,0.206,10.674,0.593c-11.57,5.815-25.086,17.35-25.381,35.754c0,1.345,0.074,2.718,0.236,4.123   c2.072,18.093,8.043,34.767,7.99,46.93c-0.002,2.424-0.236,4.635-0.734,6.654c-7.744,5.968-14.248,11.108-17.943,14.046   c-2.004-2.554-4.072-5.049-6.199-7.453C66.027,87.256,62.328,82.472,55.996,60.36c-2.201-6.989-4.922-13.765-8.258-19.495   C65.26,21.886,90.328,10.004,118.229,10.001z M10,91.836c0.004-19.683,5.205-38.112,14.316-54.058   c1.734-2.799,2.514-2.781,3.234-2.856c1.227-0.256,5.414,2.11,9.18,7.482c3.82,5.222,7.422,12.724,9.635,20.655   c6.336,23.059,12.361,31.367,33.064,54.268c18.654,20.475,33.021,51.159,32.736,64.2c0,0.964-0.072,1.799-0.193,2.476   c-1.246,7.053-2.117,11.182-2.662,13.479c-0.535,2.289-0.664,2.352-0.609,2.378l-0.01,0.02l-0.002,0.009   c-0.09,0.225-0.139,0.454-0.193,0.682c-3.572-0.362-7.094-0.899-10.557-1.595c-3.102-0.667-10.016-2.623-10.453-2.643   C42.654,182.614,10.09,141.058,10,91.836z M134.727,199.726c-5.172,0.894-10.488,1.373-15.916,1.405   c-0.033,0-0.064-0.001-0.098-0.001c0.592-2.308,1.568-6.723,3.109-15.384c0.238-1.364,0.342-2.769,0.342-4.217   c-0.223-14.289-9.537-35.884-23.139-55.387c10.031-7.983,43.102-34.021,62.264-46.019c17.705-11.092,28.639-25.391,35.896-36.664   c3.625-5.631,6.361-10.542,8.443-13.77c0.467-0.733,0.904-1.371,1.291-1.902c15.008,18.602,22.135,37.914,22.199,64.05   c-0.086,48.09-31.172,88.866-74.41,103.51C152.924,195.95,138.664,199.046,134.727,199.726z"
-                                fill="#231F20" />
+                                fill="#4ade80" />
                             <path
                                 d="M199.344,141.89c-0.469-0.293-1.084-0.153-1.379,0.314c-13.936,22.195-36.701,38.538-63.518,44.348   c-0.541,0.115-0.883,0.647-0.766,1.189c0.115,0.538,0.648,0.881,1.189,0.766c27.35-5.927,50.566-22.587,64.787-45.237   C199.953,142.799,199.811,142.183,199.344,141.89z"
-                                fill="#231F20" />
+                                fill="#4ade80" />
                             <path
                                 d="M212.105,108.562c-0.541-0.106-1.064,0.25-1.168,0.792c-1.213,6.295-3.039,12.378-5.424,18.185   c-0.209,0.509,0.035,1.094,0.545,1.304c0.512,0.21,1.096-0.035,1.307-0.544c2.432-5.931,4.297-12.14,5.535-18.568   C213.004,109.189,212.65,108.666,212.105,108.562z"
-                                fill="#231F20" />
+                                fill="#4ade80" />
                         </g>
                     </svg>
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Sayuran</h5>
@@ -90,7 +95,7 @@
 
                 <a href="#"
                     class="flex flex-col items-center w-full sm:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    <svg fill="#be123c" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px"
                         viewBox="0 0 394.167 394.167" xml:space="preserve">
                         <g>
@@ -102,14 +107,19 @@
                 </a>
 
             </div>
-            <a href="#" class="btn-primary hover:bg-green-400">Lihat semua</a>
+            <a href="/market" class="btn-primary ">Lihat semua</a>
         </div>
     </div>
-    <div class=" justify-center flex-col-reverse sm:flex-row items-center flex container mx-auto my-10 ">
+    {{-- Produk --}}
+    {{-- Brocademy --}}
+
+    <div class="flex justify-center flex-col-reverse sm:flex-row items-center  container mx-auto py-10 pt-28"
+        id="brocademy">
         <div class="px-10 ">
             <h1 class="text-3xl sm:text-5xl font-bold text-center sm:text-start mt-4 sm:mt-0">Bro<span
                     class="text-green-400">Cademy</span></h1>
-            <h3 class="text-2xl sm:text-3xl font-bold text-center mt-2 sm:text-start">Belajar bersama tentang budidaya
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mt-2 sm:text-start">Belajar bersama tentang
+                budidaya
                 tanaman</h3>
             <div class="flex gap-5 items-center mt-5">
                 <p class="font-bold text-5xl"><span>&#183;</span> </p>
@@ -124,7 +134,7 @@
                 <p>Pengalaman Praktis</p>
             </div>
             <div class="flex justify-center sm:justify-start">
-                <a href="#" class="btn-primary hover:bg-green-400 ">Lihat semua"></a>
+                <a href="#" class="btn-primary  ">Pelajari selengkapnya</a>
             </div>
         </div>
         <div style="background-image: url('https://picsum.photos/384/384')"
@@ -132,4 +142,69 @@
 
         </div>
     </div>
+    {{-- Brocademy --}}
+    {{-- Kontak --}}
+    <div class="mb-10 container mx-auto flex pt-28 flex-col sm:flex-row items-center" id="kontak">
+        <div class="w-full flex flex-col justify-between px-5">
+            <h1 class="text-3xl sm:text-5xl font-bold text-center sm:text-start mt-4 sm:mt-0">Hubungi <span
+                    class="text-green-400">kami</span></h1>
+            <h3 class="text-2xl sm:text-3xl font-bold text-center mt-2 sm:text-start">Hubungi kami melalui kontak di
+                bawah</h3>
+            <div class="flex gap-5 items-center my-5">
+                <p class="font-bold text-5xl"><i data-feather="phone" style="width: 30px; height: 30px"></i> </p>
+                <p>Akses Pembelajaran yang Fleksibel</p>
+            </div>
+            <div class="flex gap-5 items-center">
+                <p class="font-bold text-5xl"><i data-feather="mail" style="width: 30px; height: 30px"></i> </p>
+                <p>Kegiatan Interaktif</p>
+            </div>
+            <h1 class="text-2xl mt-5">Ikuti kami</h1>
+            <div class="flex gap-5 ">
+                <a href="#"><i data-feather="instagram" style="width: 30px; height: 30px"
+                        class="hover:text-red-300"></i></a>
+                <a href="#"><i data-feather="facebook" style="width: 30px; height: 30px"
+                        class="hover:text-blue-300"></i></a>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center px-5 w-full ">
+            <h1 class="text-2xl mb-2">Kirim Pesan</h1>
+            <div class="w-fit">
+                <form action="#" class=" rounded-xl p-10 border-2 shadow-sm bg-white w-72 h-fit sm:w-96 ">
+                    @csrf
+                    <div class=" flex flex-col gap-2">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="rounded-lg px-3 py-3 bg-gray-50 border-2">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="pesan">Pesan</label>
+                        <textarea name="pesan" id="" cols="30" rows="2"
+                            class="rounded-lg px-3 py-3 bg-gray-50 border-2"></textarea>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="px-5 py-2 bg-cyan-400 rounded-lg">Kirim!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.372843443807!2d106.7592029848273!3d-6.474369046570819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3be5277571b%3A0x8db28c028e9362a!2sBubro%20Farm!5e0!3m2!1sid!2sid!4v1729959215946!5m2!1sid!2sid"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    {{-- Kontak --}}
+    {{-- End --}}
+    {{-- <div class="relative overflow-hidden bg-cover bg-no-repeat py-12 text-center bg-center"
+        style="background-image: url('/aset/homepage.jpg'); height: 400px">
+        <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed ">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute sm:block -top-1 ">
+            <path fill="#f8fafc" fill-opacity="1"
+                d="M0,224L80,208C160,192,320,160,480,122.7C640,85,800,43,960,58.7C1120,75,1280,149,1360,186.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+    </div> --}}
+    {{-- End --}}
 </x-layout>
