@@ -4,8 +4,8 @@
         </div>
         <div class="gap-5 items-center hidden sm:flex">
             <a href="/" class="hover:text-cyan-600">Home</a>
-            <a href="/about" class="hover:text-cyan-600">About</a>
-            <a href="/contact" class="hover:text-cyan-600">Contact Us</a>
+            <a href="#tentang" class="hover:text-cyan-600">Tentang</a>
+            <a href="#kontak" class="hover:text-cyan-600">Hubungi kami</a>
             <a href="/market" class="hover:text-cyan-600">Market</a>
             @if (Auth::check())
                 <a href="/profile">Profile</a>
