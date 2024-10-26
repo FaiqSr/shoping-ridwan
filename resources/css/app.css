@@ -4,6 +4,6 @@
 
 @layer components {
     .btn-primary {
-        @apply px-5 py-2 shadow-sm bg-green-300 rounded-lg;
+        @apply px-5 py-2 shadow-sm border-cyan-400 border-2 hover:bg-cyan-400;
     }
 }
