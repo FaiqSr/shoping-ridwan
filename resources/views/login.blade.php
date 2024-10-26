@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <x-navbar />
+    <x-nav-bar />
     <main class="flex min-h-svh items-center justify-center flex-col gap-5">
 
         <h1 class="text-5xl font-bold">Login Form</h1>
