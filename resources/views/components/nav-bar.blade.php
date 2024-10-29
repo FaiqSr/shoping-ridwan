@@ -1,6 +1,6 @@
 <div x-data="{ aside: false }">
-    <nav class="fixed z-50 bg-green-500 flex w-full justify-between items-center h-20 px-5 shadow-lg  ">
-        <div><a href="/" class="font-bold text-2xl text-white">Bubro <span class="text-green-200">Farm</span></a>
+    <nav class="fixed z-50 bg-green-50 flex w-full justify-between items-center h-20 px-5 shadow-xl  ">
+        <div><a href="/" class="font-bold text-2xl ">Bubro <span class="text-green-400">Farm</span></a>
         </div>
         <div class="gap-5 items-center hidden sm:flex">
             <a href="/" class="hover:text-cyan-600">Home</a>
@@ -21,13 +21,18 @@
                 @endif
             @endif
         </div>
-        <div class="sm:hidden ">
-            <button x-on:click="aside = ! aside" class="flex flex-col items-center">
-                <div class="w-9 h-1 bg-black my-1"></div>
-                <div class="w-9 h-1 bg-black my-1"></div>
-                <div class="w-9 h-1 bg-black my-1"></div>
-            </button>
+        <div class="flex gap-5 items-center">
+            <a href="/market" class="btn-primary rounded-lg transition-all hidden sm:flex">Belanja Sekarang</a>
+            <a href="/market" class="sm:hidden"><i data-feather="shopping-cart"></i></a>
+            <div class="sm:hidden ">
+                <button x-on:click="aside = ! aside" class="flex flex-col items-center">
+                    <div class="w-9 h-1 bg-black my-1"></div>
+                    <div class="w-9 h-1 bg-black my-1"></div>
+                    <div class="w-9 h-1 bg-black my-1"></div>
+                </button>
+            </div>
         </div>
+
     </nav>
     <aside class="fixed w-full h-svh bg-green-50 sm:hidden z-40 transition-all"
         :class="aside ? '' : '-translate-x-[700px]'">
@@ -35,7 +40,6 @@
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/contact">Contact Us</a>
-            <a href="/market">Market</a>
             @if (Auth::check())
                 <a href="/profile">Profile</a>
                 <form action="/logout" method="POST">
