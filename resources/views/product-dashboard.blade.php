@@ -59,8 +59,7 @@
                                 {{ $product->stok }}
                             </td>
                             <td class="px-6 py-4">
-                                <button
-                                    x-on:click=" modal = ! modal; img = '{{ env('APP_URL') }}/{{ $product->image }}'"
+                                <button x-on:click=" modal = ! modal; img = '{{ env('APP_URL') }}{{ $product->image }}'"
                                     class="px-5 py-2 bg-blue-700 rounded-lg text-white">Show image
                                 </button>
                             </td>
