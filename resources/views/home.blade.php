@@ -1,8 +1,9 @@
 <x-layout>
 
-    <section id="default-carousel" class="relative w-full" data-carousel="slide">
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <div class="relative h-56 overflow-hidden  md:h-96" id="home">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="/aset/homepage.JPG"
@@ -69,16 +70,17 @@
                 <span class="sr-only">Next</span>
             </span>
         </button>
-    </section>
+    </div>
 
-    <section class="flex justify-center flex-col container mx-auto gap-5">
+
+    <section class="flex justify-center flex-col container mx-auto gap-5 mb-20 px-5 mt-10">
         <div class="text-center">
             <h3 class=" text-red-500">Produk kami</h3>
             <h1 class="font-Oswald font-bold text-6xl text-green-600">Produk</h1>
             <p class="text-gray-400">Produk yang kami jual</p>
         </div>
-        <div class="flex justify-center gap-5 flex-wrap">
-            <div class="border-2 p-5 rounded-lg max-w-96 hover:bg-gray-100 hover:scale-105">
+        <div class="flex gap-5 max-h-96 w-full overflow-x-scroll overflow-y-hidden p-3">
+            <div class="border-2 p-5 rounded-lg min-w-96 min-h-64 hover:bg-gray-100 hover:scale-105 ">
                 <a href="#" class="text-center flex flex-col items-center">
                     <svg fill="#2563eb" height="100px" width="100px" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -98,10 +100,10 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, corporis?</p>
                 </a>
             </div>
-            <div class="border-2 p-5 rounded-lg max-w-96 hover:bg-gray-100 hover:scale-105">
+            <div class="border-2 p-5 rounded-lg min-w-96 min-h-64 hover:bg-gray-100 hover:scale-105">
                 <a href="#" class="text-center flex flex-col items-center">
                     <svg enable-background="new 0 0 239.121 211.139" height="100px" id="Layer_1" version="1.1"
-                        viewBox="0 0 239.121 211.139" width="239.121px" xml:space="preserve"
+                        viewBox="0 0 239.121 211.139" width="100px" xml:space="preserve"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g>
                             <path
@@ -119,7 +121,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, corporis?</p>
                 </a>
             </div>
-            <div class="border-2 p-5 rounded-lg max-w-96 hover:bg-gray-100 hover:scale-105">
+            <div class="border-2 p-5 rounded-lg min-w-96 min-h-64 hover:bg-gray-100 hover:scale-105">
                 <a href="#" class="text-center flex flex-col items-center">
                     <svg fill="#dc2626" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px"
@@ -134,7 +136,50 @@
                 </a>
             </div>
         </div>
+        <div class="flex justify-center">
+            <a href="/market" class="text-center px-5 py-2 border bg-green-400 hover:bg-green-500">Lihat semuanya</a>
+        </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <section class="container mx-auto px-5 mb-10">
+        <h4 class="text-2xl font-semibold mb-1">Bubro<span class="text-green-400">Cademy</span></h4>
+        <h3 class="text-xl sm:text-3xl mb-5 font-BNeue">Kembangkan kemampuan pengelolaan tanaman bersama kami</h3>
+
+        <div class="gap-6 flex mb-10 h-96 overflow-x-scroll overflow-y-hidden lg:justify-center w-full p-3">
+            <div class="max-w-80 max-h-52 hover:bg-gray-100 hover:scale-105">
+                <a href="#" class="text-center flex flex-col items-center">
+                    <div style="background-image: url('https://picsum.photos/300/300'); "
+                        class="w-80 h-60 bg-center bg-cover rounded-t-lg">
+                    </div>
+                    <h1 class="text-xl font-semibold">Ikan</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, corporis?</p>
+                </a>
+            </div>
+            <div class="max-w-80 max-h-52 hover:bg-gray-100 hover:scale-105">
+                <a href="#" class="text-center flex flex-col items-center">
+                    <div style="background-image: url('https://picsum.photos/300/300'); "
+                        class="w-80 h-60 bg-center bg-cover rounded-t-lg">
+                    </div>
+                    <h1 class="text-xl font-semibold">Ikan</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, corporis?</p>
+                </a>
+            </div>
+            <div class="max-w-80 max-h-52 hover:bg-gray-100 hover:scale-105">
+                <a href="#" class="text-center flex flex-col items-center">
+                    <div style="background-image: url('https://picsum.photos/300/300'); "
+                        class="w-80 h-60 bg-center bg-cover rounded-t-lg">
+                    </div>
+                    <h1 class="text-xl font-semibold">Ikan</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, corporis?</p>
+                </a>
+            </div>
+        </div>
+
+        <a href="#" class="btn-primary">Baca selengkapnya</a>
+
+    </section>
+    <div class="fixed  z-50 bottom-3 right-3 bg-green-400 hover:bg-green-500 rounded-full px-2 py-2">
+        <a href="#home"><i data-feather="arrow-up"></i></a>
+    </div>
+
 </x-layout>
