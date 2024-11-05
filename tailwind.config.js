@@ -4,13 +4,15 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./node_modules/flowbite/**/*.js",
     ],
     theme: {
         extend: {
             fontFamily: {
-                "Oswald": ["Oswald", "sans-serif"]
-            }
+                Oswald: ["Oswald", "sans-serif"],
+                BNeue: ["Bebas Neue", "sans-serif"],
+            },
         },
     },
-    plugins: [],
+    plugins: [require("flowbite/plugin")],
 };
