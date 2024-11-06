@@ -56,7 +56,7 @@
     </nav>
     <aside class="fixed w-full h-svh bg-green-50 sm:hidden z-40 transition-all"
         :class="aside ? '' : '-translate-x-[700px]'">
-        <div class="flex gap-5 items-center flex-col mt-5 pt-20">
+        <div class="flex gap-5 items-center flex-col mt-5 pt-5">
             <a href="/">Home</a>
             <a href="/tentang">About</a>
             <a href="/kontak">Contact Us</a>
