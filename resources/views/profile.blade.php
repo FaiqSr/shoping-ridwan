@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="flex flex-col sm:flex-row min-h-svh container mx-auto">
+    <section class="flex flex-col sm:flex-row min-h-svh container mx-auto my-5">
         <article class="px-8 mb-5 mt-10 sm:w-1/4 ">
             <img src="https://picsum.photos/id/1/1920/1080" alt="" class="w-80 rounded-lg">
             <h1 class="text-3xl font-bold mt-5">Bubro <span class="text-green-400">Farm</span></h1>
