@@ -8,7 +8,7 @@
             <h3 class="font-semibold font-Oswald mt-5">Jam operasional</h3>
             <p>07.00 - 20.00</p>
         </section>
-        <section class="container mx-auto px-5 flex  flex-col lg:flex-row">
+        <section class="container mx-auto px-5 flex my-5  flex-col lg:flex-row">
             <article class="bg-slate-200  p-5 pb-7 border-b-2 max-w-96 h-80 flex flex-col justify-center shadow-lg">
                 <h1 class="mb-2 text-2xl font-bold ">Kontak</h1>
                 <p class="mb-2">Jl. Bukit Intan, RT.003/RW.003, Tajurhalang, Kec. Tajur Halang, Kabupaten Bogor, Jawa
@@ -19,7 +19,7 @@
                     <a href="#" class="bg-green-300 rounded-lg px-5 py-2 hover:text-white">WhatsApp</a>
                 </div>
             </article>
-            <section class="container mx-auto px-5">
+            <section class="container mx-auto px-5 mt-5 lg:mt-0">
 
                 <h3 class="font-semibold font-Oswald">Kirim pesan langsung</h3>
 
