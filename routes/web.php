@@ -24,6 +24,12 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/market', [MarketController::class, 'index']);
 Route::get('/market/{id}', [MarketController::class, 'byId']);
+Route::get('/tentang', function () {
+    return view('profile');
+});
+Route::get("kontak", function () {
+    return view('kontak');
+});
 
 
 Route::middleware(UnAuthenticate::class)->group(function () {
