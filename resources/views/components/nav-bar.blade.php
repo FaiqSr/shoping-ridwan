@@ -7,7 +7,6 @@
                 <a href="/" class="hover:text-cyan-600">Home</a>
                 <a href="/tentang" class="hover:text-cyan-600">Tentang</a>
                 <a href="/kontak" class="hover:text-cyan-600">Hubungi kami</a>
-                <a href="/market" class="hover:text-cyan-600">Market</a>
             </div>
             <a href="/market" class=""><i data-feather="shopping-cart"></i></a>
             @if (Auth::check())
