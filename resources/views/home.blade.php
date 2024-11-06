@@ -73,7 +73,7 @@
     </div>
 
 
-    <section class="flex justify-center flex-col container mx-auto gap-5 mb-20 px-5 mt-10">
+    <section class="flex justify-center flex-col container mx-auto gap-5 mb-20 mt-10">
         <div class="text-center">
             <h3 class=" text-red-500">Produk kami</h3>
             <h1 class="font-Oswald font-bold text-6xl text-green-600">Produk</h1>
