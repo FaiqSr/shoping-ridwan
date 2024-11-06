@@ -2,13 +2,13 @@
     <nav class="z-50  flex w-full justify-between items-center h-20 px-5 border-b-2  ">
         <div><a href="/" class="font-bold text-2xl ">Bubro <span class="text-green-400">Farm</span></a>
         </div>
-        <div class="gap-5 items-center hidden sm:flex">
-            <a href="/" class="hover:text-cyan-600">Home</a>
-            <a href="#tentang" class="hover:text-cyan-600">Tentang</a>
-            <a href="#kontak" class="hover:text-cyan-600">Hubungi kami</a>
-            <a href="/market" class="hover:text-cyan-600">Market</a>
-        </div>
         <div class="flex gap-5 items-center">
+            <div class="gap-5 items-center hidden sm:flex">
+                <a href="/" class="hover:text-cyan-600">Home</a>
+                <a href="#tentang" class="hover:text-cyan-600">Tentang</a>
+                <a href="#kontak" class="hover:text-cyan-600">Hubungi kami</a>
+                <a href="/market" class="hover:text-cyan-600">Market</a>
+            </div>
             <a href="/market" class=""><i data-feather="shopping-cart"></i></a>
             @if (Auth::check())
                 <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown"
@@ -62,4 +62,9 @@
             <a href="/contact">Contact Us</a>
         </div>
     </aside>
+
+
+    <script>
+        feather.replace();
+    </script>
 </div>
