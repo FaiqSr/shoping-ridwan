@@ -6,27 +6,27 @@
         <div class="relative h-56 overflow-hidden  md:h-96" id="home">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/aset/homepage.JPG"
+                <img src="https://picsum.photos/id/1/1920/1080"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/aset/homepage.JPG"
+                <img src="https://picsum.photos/id/2/1920/1080"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/aset/homepage.JPG"
+                <img src="https://picsum.photos/id/3/1920/1080"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 4 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/aset/homepage.JPG"
+                <img src="https://picsum.photos/id/4/1920/1080"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 5 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/aset/homepage.JPG"
+                <img src="https://picsum.photos/id/5/1920/1080"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
         </div>
