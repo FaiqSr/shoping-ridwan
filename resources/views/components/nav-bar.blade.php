@@ -5,8 +5,8 @@
         <div class="flex gap-5 items-center">
             <div class="gap-5 items-center hidden sm:flex">
                 <a href="/" class="hover:text-cyan-600">Home</a>
-                <a href="#tentang" class="hover:text-cyan-600">Tentang</a>
-                <a href="#kontak" class="hover:text-cyan-600">Hubungi kami</a>
+                <a href="/tentang" class="hover:text-cyan-600">Tentang</a>
+                <a href="/kontak" class="hover:text-cyan-600">Hubungi kami</a>
                 <a href="/market" class="hover:text-cyan-600">Market</a>
             </div>
             <a href="/market" class=""><i data-feather="shopping-cart"></i></a>
@@ -58,8 +58,8 @@
         :class="aside ? '' : '-translate-x-[700px]'">
         <div class="flex gap-5 items-center flex-col mt-5 pt-20">
             <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/tentang">About</a>
+            <a href="/kontak">Contact Us</a>
         </div>
     </aside>
 
