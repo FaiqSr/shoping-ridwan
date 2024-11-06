@@ -22,14 +22,17 @@ Route::get('/', function () {
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/market', [MarketController::class, 'index']);
-Route::get('/market/{id}', [MarketController::class, 'byId']);
 Route::get('/tentang', function () {
     return view('profile');
 });
 Route::get("kontak", function () {
     return view('kontak');
 });
+
+Route::get('/market', [MarketController::class, 'index']);
+Route::get('/market/{id}', [MarketController::class, 'byId']);
+Route::post('/market/search', [MarketController::class, 'search']);
+Route::get('/market/search', [MarketController::class, 'search']);
 
 
 Route::middleware(UnAuthenticate::class)->group(function () {

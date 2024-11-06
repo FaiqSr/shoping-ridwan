@@ -65,4 +65,18 @@ class MarketController extends Controller
 
         return back();
     }
+
+    public function search(Request $request)
+    {
+        $search = $request->validate([
+            'search' => 'required'
+        ]);
+
+        $product = Product::where('name', 'like', '%' . $search['search'] . '%')->get();
+
+        return view('markets', [
+            'title' => 'market',
+            'data' => $product
+        ]);
+    }
 }

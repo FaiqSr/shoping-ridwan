@@ -20,16 +20,16 @@
         </div>
         <div class="flex overflow-auto px-5 gap-5 ">
             @foreach ($data as $datas)
-                <section class="w-96">
+                <article class="w-96">
                     <a href="/market/{{ $datas->id }}"
                         class="flex flex-col text-center border-2 p-5 rounded-lg items-center">
                         <div class="w-80">
-                            <img src="http://127.0.0.1:8000/{{ $datas->image }}" alt="" class=" rounded-lg">
+                            <img src="{{ env('APP_URL') }}/{{ $datas->image }}" alt="" class=" rounded-lg">
                         </div>
                         <h1>{{ $datas->name }}</h1>
                         <p>{{ Str::limit($datas->desc, 50, '...') }}</p>
                     </a>
-                </section>
+                </article>
             @endforeach
         </div>
     </div>
